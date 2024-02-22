@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <style>
+            .category-left .wrap-title-category{margin-bottom:25px}:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#b12d1a;--bs-orange:#fb8f1d;--bs-yellow:#ffbb0c;--bs-green:#1abe84;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#fb8f1d;--bs-primary-rgb:251,143,29;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-body-color-rgb:33,37,41;--bs-body-bg-rgb:255,255,255;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));--bs-body-font-family:Mulish,sans-serif;--bs-body-font-size:1.0625rem;--bs-body-font-weight:300;--bs-body-line-height:1.764;--bs-body-color:#212529;--bs-body-bg:#fff}*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%}h1,h2,h3,h5{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.39063rem + 1.6875vw)}@media (min-width:1200px){h1{font-size:2.65625rem}}h2{font-size:calc(1.3375rem + 1.05vw)}@media (min-width:1200px){h2{font-size:2.125rem}}h3{font-size:calc(1.31094rem + .73125vw)}@media (min-width:1200px){h3{font-size:1.85938rem}}h5{font-size:calc(1.25781rem + .09375vw)}@media (min-width:1200px){h5{font-size:1.32813rem}}ul{padding-left:2rem}ul{margin-top:0;margin-bottom:1rem}a{color:#0d6efd;text-decoration:underline}img,svg{vertical-align:middle}label{display:inline-block}button{border-radius:0}button,input{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button{text-transform:none}[type=button],[type=submit],button{-webkit-appearance:button}::-moz-focus-inner{padding:0;border-style:none}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}.list-unstyled{padding-left:0;list-style:none}.img-fluid{max-width:100%;height:auto}.container{width:100%;padding-right:var(--bs-gutter-x,.625rem);padding-left:var(--bs-gutter-x,.625rem);margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}@media (min-width:1400px){.container{max-width:1240px}}.row{--bs-gutter-x:1.25rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(-1 * var(--bs-gutter-y));margin-right:calc(-.5 * var(--bs-gutter-x));margin-left:calc(-.5 * var(--bs-gutter-x))}.row>*{flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-top:var(--bs-gutter-y)}.col-auto{flex:0 0 auto;width:auto}.col-1{flex:0 0 auto;width:8.33333%}.col-2{flex:0 0 auto;width:16.66667%}.col-3{flex:0 0 auto;width:25%}.col-4{flex:0 0 auto;width:33.33333%}.col-5{flex:0 0 auto;width:41.66667%}.col-6{flex:0 0 auto;width:50%}.col-7{flex:0 0 auto;width:58.33333%}.col-8{flex:0 0 auto;width:66.66667%}.col-9{flex:0 0 auto;width:75%}.col-10{flex:0 0 auto;width:83.33333%}.col-11{flex:0 0 auto;width:91.66667%}.col-12{flex:0 0 auto;width:100%}@media (min-width:576px){.col-sm{flex:1 0 0%}.col-sm-auto{flex:0 0 auto;width:auto}.col-sm-1{flex:0 0 auto;width:8.33333%}.col-sm-2{flex:0 0 auto;width:16.66667%}.col-sm-3{flex:0 0 auto;width:25%}.col-sm-4{flex:0 0 auto;width:33.33333%}.col-sm-5{flex:0 0 auto;width:41.66667%}.col-sm-6{flex:0 0 auto;width:50%}.col-sm-7{flex:0 0 auto;width:58.33333%}.col-sm-8{flex:0 0 auto;width:66.66667%}.col-sm-9{flex:0 0 auto;width:75%}.col-sm-10{flex:0 0 auto;width:83.33333%}.col-sm-11{flex:0 0 auto;width:91.66667%}.col-sm-12{flex:0 0 auto;width:100%}}@media (min-width:768px){.col-md{flex:1 0 0%}.col-md-auto{flex:0 0 auto;width:auto}.col-md-1{flex:0 0 auto;width:8.33333%}.col-md-2{flex:0 0 auto;width:16.66667%}.col-md-3{flex:0 0 auto;width:25%}.col-md-4{flex:0 0 auto;width:33.33333%}.col-md-5{flex:0 0 auto;width:41.66667%}.col-md-6{flex:0 0 auto;width:50%}.col-md-7{flex:0 0 auto;width:58.33333%}.col-md-8{flex:0 0 auto;width:66.66667%}.col-md-9{flex:0 0 auto;width:75%}.col-md-10{flex:0 0 auto;width:83.33333%}.col-md-11{flex:0 0 auto;width:91.66667%}.col-md-12{flex:0 0 auto;width:100%}}@media (min-width:992px){.col-lg{flex:1 0 0%}.col-lg-auto{flex:0 0 auto;width:auto}.col-lg-1{flex:0 0 auto;width:8.33333%}.col-lg-2{flex:0 0 auto;width:16.66667%}.col-lg-3{flex:0 0 auto;width:25%}.col-lg-4{flex:0 0 auto;width:33.33333%}.col-lg-5{flex:0 0 auto;width:41.66667%}.col-lg-6{flex:0 0 auto;width:50%}.col-lg-7{flex:0 0 auto;width:58.33333%}.col-lg-8{flex:0 0 auto;width:66.66667%}.col-lg-9{flex:0 0 auto;width:75%}.col-lg-10{flex:0 0 auto;width:83.33333%}.col-lg-11{flex:0 0 auto;width:91.66667%}.col-lg-12{flex:0 0 auto;width:100%}}@media (min-width:1200px){.col-xl{flex:1 0 0%}.col-xl-auto{flex:0 0 auto;width:auto}.col-xl-1{flex:0 0 auto;width:8.33333%}.col-xl-2{flex:0 0 auto;width:16.66667%}.col-xl-3{flex:0 0 auto;width:25%}.col-xl-4{flex:0 0 auto;width:33.33333%}.col-xl-5{flex:0 0 auto;width:41.66667%}.col-xl-6{flex:0 0 auto;width:50%}.col-xl-7{flex:0 0 auto;width:58.33333%}.col-xl-8{flex:0 0 auto;width:66.66667%}.col-xl-9{flex:0 0 auto;width:75%}.col-xl-10{flex:0 0 auto;width:83.33333%}.col-xl-11{flex:0 0 auto;width:91.66667%}.col-xl-12{flex:0 0 auto;width:100%}}@media (min-width:1400px){.col-xxl{flex:1 0 0%}.col-xxl-auto{flex:0 0 auto;width:auto}.col-xxl-1{flex:0 0 auto;width:8.33333%}.col-xxl-2{flex:0 0 auto;width:16.66667%}.col-xxl-3{flex:0 0 auto;width:25%}.col-xxl-4{flex:0 0 auto;width:33.33333%}.col-xxl-5{flex:0 0 auto;width:41.66667%}.col-xxl-6{flex:0 0 auto;width:50%}.col-xxl-7{flex:0 0 auto;width:58.33333%}.col-xxl-8{flex:0 0 auto;width:66.66667%}.col-xxl-9{flex:0 0 auto;width:75%}.col-xxl-10{flex:0 0 auto;width:83.33333%}.col-xxl-11{flex:0 0 auto;width:91.66667%}.col-xxl-12{flex:0 0 auto;width:100%}}.col-form-label{padding-top:1px;padding-bottom:1px;margin-bottom:0;font-size:inherit;line-height:1.764}.col-form-label-lg{padding-top:calc(.5rem + 1px);padding-bottom:calc(.5rem + 1px);font-size:calc(1.25781rem + .09375vw)}@media (min-width:1200px){.col-form-label-lg{font-size:1.32813rem}}.col-form-label-sm{padding-top:calc(.25rem + 1px);padding-bottom:calc(.25rem + 1px);font-size:.92969rem}.form-control{display:block;width:100%;padding:0 30px;font-family:Mulish,sans-serif;font-size:1rem;font-weight:300;line-height:1.764;color:#212529;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;-webkit-appearance:none;-moz-appearance:none;appearance:none;border-radius:0}.form-control::-webkit-date-and-time-value{height:1.764em}.form-control::-moz-placeholder{color:#6c757d;opacity:1}.form-control::-webkit-file-upload-button{padding:0 30px;margin:0 -30px;-webkit-margin-end:30px;margin-inline-end:30px;color:#212529;background-color:#e9ecef;border-color:inherit;border-style:solid;border-width:0;border-inline-end-width:1px;border-radius:0}.form-check{display:block;min-height:1.87425rem;padding-left:1.5em;margin-bottom:.125rem}.form-check .form-check-input{float:left;margin-left:-1.5em}.form-check-input{width:1em;height:1em;margin-top:.382em;vertical-align:top;background-color:#fff;background-repeat:no-repeat;background-position:center;background-size:contain;border:1px solid rgba(0,0,0,.25);-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-print-color-adjust:exact;color-adjust:exact}.form-check-input[type=checkbox]{border-radius:.25em}.btn{display:inline-block;font-weight:400;line-height:1.764;color:#212529;text-align:center;text-decoration:none;vertical-align:middle;background-color:transparent;border:1px solid transparent;padding:9px 15px;font-size:1.0625rem;border-radius:8px}.fade:not(.show){opacity:0}.card-title{margin-bottom:.5rem}.btn-close{box-sizing:content-box;width:1em;height:1em;padding:.25em;color:#000;border:0;border-radius:.25rem;opacity:.5}.modal{position:fixed;top:0;left:0;z-index:1055;display:none;width:100%;height:100%;overflow-x:hidden;overflow-y:auto;outline:0}.modal-dialog{position:relative;width:auto;margin:.5rem}.modal.fade .modal-dialog{transform:translate(0,-50px)}.modal-content{position:relative;display:flex;flex-direction:column;width:100%;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.2);border-radius:.3rem;outline:0}.modal-header{display:flex;flex-shrink:0;align-items:center;justify-content:space-between;padding:1rem;border-bottom:1px solid #dee2e6;border-top-left-radius:calc(.3rem - 1px);border-top-right-radius:calc(.3rem - 1px)}.modal-header .btn-close{padding:.5rem;margin:-.5rem -.5rem -.5rem auto}.modal-title{margin-bottom:0;line-height:1.764}.modal-body{position:relative;flex:1 1 auto;padding:1rem}@media (min-width:576px){.modal-dialog{max-width:500px;margin:1.75rem auto}}.d-flex{display:flex!important}:root{--swiper-theme-color:#007aff}:root{--swiper-navigation-size:44px}.swiper-zoom-container>svg{max-width:100%;max-height:100%;-o-object-fit:contain;object-fit:contain}[data-aos^=fade][data-aos^=fade]{opacity:0}[data-aos=fade-right]{transform:translate3d(-100px,0,0)}[data-aos=fade-left]{transform:translate3d(100px,0,0)}.carousel__button svg{width:var(--carousel-button-svg-width,50%);height:var(--carousel-button-svg-height,50%);fill:none;stroke:currentColor;stroke-width:var(--carousel-button-svg-stroke-width,1.5);stroke-linejoin:bevel;stroke-linecap:round;filter:var(--carousel-button-svg-filter, none)}.fancybox__spinner svg{animation:2s linear infinite fancybox-rotate;transform-origin:center center;position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;width:100%;height:100%}.fancybox__spinner svg circle{fill:none;stroke-width:2.75;stroke-miterlimit:10;stroke-dasharray:1,200;stroke-dashoffset:0;animation:1.5s ease-in-out infinite fancybox-dash;stroke-linecap:round;stroke:currentColor}@keyframes fancybox-rotate{100%{transform:rotate(360deg)}}@keyframes fancybox-dash{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:89,200;stroke-dashoffset:-35px}100%{stroke-dasharray:89,200;stroke-dashoffset:-124px}}.flatpickr-months .flatpickr-next-month:hover svg,.flatpickr-months .flatpickr-prev-month:hover svg{fill:#f64747}.flatpickr-months .flatpickr-next-month svg,.flatpickr-months .flatpickr-prev-month svg{width:14px;height:14px}.flatpickr-months .flatpickr-next-month svg path,.flatpickr-months .flatpickr-prev-month svg path{fill:inherit}.numInputWrapper span svg{width:inherit;height:auto}.numInputWrapper span svg path{fill:rgba(0,0,0,.5)}.body{overflow-x:hidden}h1{font:700 64px/1.25em "Playfair Display",serif}@media (max-width:1300px){h1{font-size:52px}}@media (max-width:991px){h1{font-size:40px}}@media (max-width:575px){h1{font-size:30px}}h2{font:700 36px/1.388em "Playfair Display",serif}@media (max-width:991px){h2{font-size:26px}}@media (max-width:767px){h2{font-size:22px}}h3{font:700 19px/1.578em Inter,sans-serif}[class^=section-]{padding:70px 0}[class^=section-]:nth-child(1){padding:92px 0 70px}@media (max-width:767px){h3{font-size:16px}[class^=section-]:nth-child(1){padding-bottom:50px}[class^=section-]{padding:50px 0}}@media (max-width:575px){[class^=section-]:nth-child(1){padding:84px 0 25px}[class^=section-]{padding:25px 0}.title-with-link h2{text-align:center}}.title-with-link{align-items:center;padding-bottom:47px}.title-with-link .wrap-link{text-align:right}.title-with-link .link-view-all{color:#fb8f1d;font:600 17px/1.176em Inter,sans-serif;text-decoration:none}@media (max-width:767px){.title-with-link{padding-bottom:27px}.title-with-link .link-view-all{font-size:13px}}.title-with-link .link-view-all .arrow-right{font-size:10px;fill:none;stroke:currentColor;height:1.1em;width:.6em}.logo{display:inline-block}.logo img{width:100%}.object-fit{-o-object-fit:cover;object-fit:cover;width:100%;height:100%}.link-unstyled{color:#000;text-decoration:none}.article-card{display:block;padding-bottom:30px}.article-card .article-card-image{border-radius:8px;margin-bottom:20px;overflow:hidden}.article-card .article-card-image .card-image{display:block;height:290px}.article-card .article-card-title{margin-bottom:20px}@media (max-width:1199px){.article-card .article-card-title .card-title{font-size:15px}}.article-card .autor{justify-content:flex-start;align-items:center;flex-wrap:wrap;display:flex}.article-card .autor .autor-hoto{border-radius:100%;flex:0 0 40px;overflow:hidden}.article-card .autor .autor-name{color:#848484;margin-left:20px}@media (max-width:575px){.title-with-link .wrap-link{text-align:center}.article-card .article-card-title .card-title{font-size:14px}.article-card .autor .autor-hoto{flex:0 0 34px}.article-card .autor .autor-name{font-size:14px}}.border-right{border-right:1px solid #d7d7d7}.custom-form{border:none;border-bottom:2px solid #afb0b9}.form-login .forgot-password{color:#fb8f1d;display:inline-block;padding-top:25px;text-decoration:none}.wrap-form-element{margin-bottom:25px;position:relative}.wrap-form-element [class^=icon-]{position:absolute;fill:#fb8f1d;font-size:10px;height:1.8em;left:0;top:5px;width:1.8em}.custom-btn{background:#fb8f1d;color:#fff}.outline-custom-btn{background:#fff;border:1px solid #fb8f1d;color:#fb8f1d}.btn-block{display:block;width:100%}.wrap-btn{max-width:164px}@media (max-width:991px){.wrap-btn{max-width:150px}}@media (max-width:767px){.article-card .article-card-title{margin-bottom:10px}.custom-btn{font-size:15px;padding:7px 13px}.wrap-btn{max-width:140px}}.custom-modal{max-width:450px}.custom-modal .modal-content{border-radius:8px}.custom-modal .modal-content .modal-header{border-bottom:0}.custom-modal .modal-content .modal-title{color:#fb8f1d;text-align:center}.custom-modal .modal-content .modal-body{padding:40px}.main-header{background:#fff;padding:20px 0;position:fixed;width:100%;z-index:10}.main-header .custom-navbar{align-items:center;display:flex;flex-wrap:nowrap;font:500 16px/1.21em Inter,sans-serif;margin:0 -9px}@media (max-width:991px){.main-header .custom-navbar{flex-wrap:wrap;justify-content:space-between}}.main-header .block-logo{flex:0 0 70px;padding:0 9px}@media (max-width:575px){.main-header .block-logo{flex:0 0 62px}}.main-header .block-menu{flex:1 1 auto;padding:0 9px}@media (max-width:991px){.main-header .block-menu{display:none;flex:0 0 100%}}.main-header .list-menu{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-end;padding-top:15px}.main-header .list-menu li{padding:0 17px}@media (max-width:991px){.main-header .list-menu{justify-content:flex-start;padding-top:25px;flex-direction:column}.main-header .list-menu li{padding:10px 0;border-bottom:1px solid #fb8f1d}.main-header .wrap-buttons.show-btn-desktop{display:none}}.main-header .list-menu .menu-link{text-decoration:none;color:#b8becd}.main-header .wrap-buttons{display:flex;flex-wrap:nowrap;margin:0 -9px}.main-header .wrap-buttons .block-button{padding:0 9px}.main-header .wrap-buttons.show-btn-desktop .block-button{width:150px}.main-header .wrap-buttons.show-btn-mobile{padding-top:50px;padding-bottom:50px}.main-header .wrap-buttons.show-btn-mobile .block-button{flex:0 0 50%}.main-header .custom-btn,.main-header .outline-custom-btn{font-size:15px;padding:8px 15px}.main-header .burger-menu{flex:0 0 auto;padding:0 9px}@media (min-width:992px){.main-header .wrap-buttons.show-btn-mobile{display:none}.main-header .burger-menu{display:none}}.main-header .burger-menu .wrap-icon{display:block;font-size:10px}.main-header .burger-menu .wrap-icon .icon-menu{fill:#fb8f1d;height:4em;width:4em}.main-blog-content{padding:120px 0 70px}@media (max-width:767px){.main-header .burger-menu .wrap-icon{font-size:8px}.main-blog-content{padding:92px 0 50px}}@media (max-width:575px){.main-blog-content{padding:84px 0 25px}}.main-blog-content [class^=section-]:nth-child(1){padding:0}.main-blog-content .wrap-main-title{border-bottom:1px solid #d7d7d7}.main-blog-content .wrap-main-title.mobile{display:block}@media (min-width:992px){.main-blog-content .wrap-main-title.mobile{display:none}}.main-blog-content .wrap-main-title.desctop{display:block}.article-category{border-bottom:1px solid #d7d7d7;padding-bottom:50px;padding-top:50px}.article-category .title-with-link{padding-bottom:25px}.article-category .wrap-title-category{padding-bottom:0}.category-left{padding-right:30px}.category-group{padding-left:30px}@media (max-width:767px){.article-category{padding-bottom:10px;padding-top:40px}.article-category .border-right{border-right:none}.category-left{border-bottom:1px solid #d7d7d7;padding-bottom:10px;padding-right:0}.category-group{padding-left:0;padding-top:40px}}.category-group ul{margin-bottom:0}.category-group .card-top-story{border-top:1px solid #d7d7d7;padding-bottom:25px;padding-top:25px}.category-group .card-top-story:nth-child(1){border-top:none;padding-top:0}.category-group .flex-align{justify-content:flex-start;align-items:center;flex-wrap:nowrap;display:flex}.category-group .wrap-card-image{border-radius:8px;flex:0 0 86px;margin-bottom:0;overflow:hidden}.category-group .card-image{display:block;height:86px}.category-group .wrap-card-title{flex:1 1 auto;padding-left:20px;margin-bottom:0}.category-group .wrap-card-title .card-title{font-size:17px;line-height:1.25em;margin-bottom:0}@media (max-width:1199px){.category-group .wrap-card-title .card-title{font-size:15px}}.category-group .wrap-title-category,.category-left .wrap-title-category{margin-bottom:25px}.blog-menu-title,.wrap-title-category{justify-content:flex-start;align-items:center;flex-wrap:wrap;display:flex}.blog-menu-title .title,.wrap-title-category .title{color:#4a4c53;display:inline-block;font-size:20px;margin-bottom:0;margin-left:12px}@media (max-width:575px){.category-group .wrap-card-title .card-title{font-size:14px}.blog-menu-title .title,.wrap-title-category .title{font-size:16px;margin-left:6px}}.blog-menu{padding-top:10px}.blog-menu .blog-menu-title{margin-bottom:25px}.categories-list{margin-bottom:0;justify-content:flex-start;align-items:flex-start;flex-wrap:wrap;display:flex;flex-direction:column}.categories-list li{margin-bottom:15px}@media (max-width:991px){.main-blog-content .wrap-main-title.desctop{display:none}.blog-menu{padding-top:20px}.blog-menu .blog-menu-title{display:none}.categories-list{justify-content:flex-start;align-items:center;flex-wrap:wrap;display:flex;flex-direction:row}.categories-list li{margin-right:15px}}.categories-list .custom-btn{background:#d7d7d7;color:#4a4c53;font-size:15px;line-height:1.4em}@media (max-width:1199px){.categories-list .custom-btn{font-size:14px}}@media (max-width:767px){.categories-list .custom-btn{font-size:12px}}.blog-menu [class^=icon-],.section-articles [class^=icon-]{fill:#b8becd;font-size:10px;height:1.8em;width:1.8em}@media (max-width:575px){.blog-menu [class^=icon-],.section-articles [class^=icon-]{font-size:8px}}
+        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"></noscript>
+
+        <link rel="preload" href="assets/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="assets/css/all.css"></noscript>
+        <script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var t,o=loadCSS.relpreload={};o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},o.support()||(o.poly(),t=n.setInterval(o.poly,500),n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})),"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+    </head>
+    <body class="body">
+        <header class="main-header js_sticky_header">
+            <div class="container">
+                <nav class="custom-navbar">
+                    <div class="block-logo">
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.svg" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                    <div class="burger-menu">
+                        <a href="#" class="js-menu-btn">
+                            <div class="wrap-icon">
+                                <svg class="icon-menu"><use xlink:href="./assets/images/sprite.svg#icon-menu"></use></svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="block-menu">
+                        <ul class="list-menu list-unstyled">
+                            <li>
+                                <a href="index.html" class="menu-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="destinations.html" class="menu-link">Destinations</a>
+                            </li>
+                            <li>
+                                <a href="blog.html" class="menu-link">Blog</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="menu-link">About</a>
+                            </li>
+                            <li>
+                                <a href="contact_us.html" class="menu-link">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="wrap-buttons show-btn-mobile">
+                            <div class="block-button login-btn">
+                                <a href="#" class="btn outline-custom-btn btn-block" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                            </div>
+                            <div class="block-button register-btn">
+                                <a href="#" class="btn custom-btn btn-block" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-buttons show-btn-desktop">
+                        <div class="block-button login-btn">
+                            <a href="#" class="btn outline-custom-btn btn-block" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                        </div>
+                        <div class="block-button register-btn">
+                            <a href="#" class="btn custom-btn btn-block" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="main-blog-content">
+                    <div class="wrap-main-title mobile" data-aos="fade-right" data-aos-duration="1500"><h1>All Articles</h1></div>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-3" data-aos="fade-right" data-aos-duration="1500">
+                            <aside class="blog-menu">
+                                <div class="blog-menu-title">
+                                    <svg class="icon-categories"><use xlink:href="./assets/images/sprite.svg#icon-categories"></use></svg>
+                                    <h2 class="title">Categories</h2>
+                                </div>
+                                <ul class="categories-list list-unstyled list-links">
+                                    <li><a href="#" class="btn custom-btn">All Articles</a></li>
+                                    <li><a href="#" class="btn custom-btn">Adventure Travel</a></li>
+                                    <li><a href="#" class="btn custom-btn">Art And Culture</a></li>
+                                    <li><a href="#" class="btn custom-btn">Wildlife And Nature</a></li>
+                                    <li><a href="#" class="btn custom-btn">Family Holidays</a></li>
+                                    <li><a href="#" class="btn custom-btn">Food And Drink</a></li>
+                                </ul>
+                            </aside>
+                        </div>
+                        <div class="col-md-12 col-lg-9">
+                            <div class="section-articles">
+                                <div class="wrap-main-title desctop" data-aos="fade-right" data-aos-duration="1500"><h1>All Articles</h1></div>
+                                <div class="article-category">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6 border-right" data-aos="fade-right" data-aos-duration="1500">
+                                            <div class="category-left">
+                                                <div class="wrap-title-category">
+                                                    <svg class="icon-gem"><use xlink:href="./assets/images/sprite.svg#icon-gem"></use></svg>
+                                                    <h2 class="title">Spotlight</h2>
+                                                </div>
+                                                <a href="#" class="article-card link-unstyled" data-aos="fade-right" data-aos-duration="1500">
+                                                    <div class="article-card-image">
+                                                        <picture class="card-image">
+                                                            <source srcset="assets/images/webp/article_4.webp 1920w" type="image/webp" sizes="1920px">
+                                                            <source srcset="assets/images/assets/images/article_4.jpg 1920w" type="image/jpeg" sizes="1920px">
+                                                            <img class="object-fit" src="assets/images/article_4.jpg 1920w" width="1920" height="2880" alt="article photo" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="article-card-title">
+                                                        <h3 class="card-title">The Wild and Windy Westfjords</h3>
+                                                    </div>
+                                                    <div class="autor">
+                                                        <div class="autor-hoto">
+                                                            <picture>
+                                                                <source srcset="assets/images/webp/article_autor_1.webp 639w" type="image/webp" sizes="639px">
+                                                                <source srcset="assets/images/assets/images/article_autor_1.jpg 639w" type="image/jpeg" sizes="639px">
+                                                                <img class="object-fit" src="assets/images/article_autor_1.jpg 639w" width="639" height="639" alt="autor photo" loading="lazy">
+                                                            </picture>
+                                                        </div>
+                                                        <div class="autor-name"><span>Nina Dobrev</span></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
+                                            <div class="category-group">
+                                                <div class="wrap-title-category">
+                                                    <svg class="icon-fire"><use xlink:href="./assets/images/sprite.svg#icon-fire"></use></svg>
+                                                    <h2 class="title">Trending</h2>
+                                                </div>
+                                                <ul class="list-unstyled">
+                                                    <li class="card-top-story d-flex">
+                                                        <a href="#" class="flex-align link-unstyled">
+                                                            <div class="wrap-card-image">
+                                                                <picture class="card-image">
+                                                                    <source srcset="assets/images/webp/article_4.webp 1920w" type="image/webp" sizes="1920px">
+                                                                    <source srcset="assets/images/assets/images/article_4.jpg 1920w" type="image/jpeg" sizes="1920px">
+                                                                    <img class="object-fit" src="assets/images/article_4.jpg 1920w" width="1920" height="1280" alt="article photo" loading="lazy">
+                                                                </picture>
+                                                            </div>
+                                                            <div class="wrap-card-title">
+                                                                <h3 class="card-title">The best Kyoto restaurant to try Japanese food</h3>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="card-top-story d-flex">
+                                                        <a href="#" class="flex-align link-unstyled">
+                                                            <div class="wrap-card-image">
+                                                                <picture class="card-image">
+                                                                    <source srcset="assets/images/webp/article_12.webp 1920w" type="image/webp" sizes="1920px">
+                                                                    <source srcset="assets/images/assets/images/article_12.jpg 1920w" type="image/jpeg" sizes="1920px">
+                                                                    <img class="object-fit" src="assets/images/article_12.jpg 1920w" width="1920" height="1280" alt="article photo" loading="lazy">
+                                                                </picture>
+                                                            </div>
+                                                            <div class="wrap-card-title">
+                                                                <h3 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, enim!</h3>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="card-top-story d-flex">
+                                                        <a href="#" class="flex-align link-unstyled">
+                                                            <div class="wrap-card-image">
+                                                                <picture class="card-image">
+                                                                    <source srcset="assets/images/webp/article_6.webp 1920w" type="image/webp" sizes="1920px">
+                                                                    <source srcset="assets/images/assets/images/article_6.jpg 1920w" type="image/jpeg" sizes="1920px">
+                                                                    <img class="object-fit" src="assets/images/article_6.jpg 1920w" width="1920" height="1280" alt="article photo" loading="lazy">
+                                                                </picture>
+                                                            </div>
+                                                            <div class="wrap-card-title">
+                                                                <h3 class="card-title">Beatae eius, nemo debitis quasi culpa ullam magnam at quas libero saepe</h3>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="article-category">
+                                    <div class="row title-with-link">
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
+                                            <div class="wrap-title-category">
+                                                <svg class="icon-hiking"><use xlink:href="./assets/images/sprite.svg#icon-hiking"></use></svg>
+                                                <h2 class="title">Adventure Travel</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
+                                            <div class="wrap-link">
+                                                <a href="#" class="link-view-all">
+                                                    <span>Read More</span>
+                                                    <svg class="arrow-right"><use xlink:href="./assets/images/sprite.svg#arrow-right"></use></svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
+                                            <a href="#" class="article-card link-unstyled">
+                                                <div class="article-card-image">
+                                                    <picture class="card-image">
+                                                        <source srcset="assets/images/webp/article_11.webp 1920w" type="image/webp" sizes="1920px">
+                                                        <source srcset="assets/images/assets/images/article_11.jpg 1920w" type="image/jpeg" sizes="1920px">
+                                                        <img class="object-fit" src="assets/images/article_11.jpg 1920w" width="1920" height="1280" alt="article photo" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="article-card-title">
+                                                    <h3 class="card-title">The Ultimate New Zealand Road Trip Itinerary</h3>
+                                                </div>
+                                                <div class="autor">
+                                                    <div class="autor-hoto">
+                                                        <picture>
+                                                            <source srcset="assets/images/webp/article_autor_1.webp 639w" type="image/webp" sizes="639px">
+                                                            <source srcset="assets/images/assets/images/article_autor_1.jpg 639w" type="image/jpeg" sizes="639px">
+                                                            <img class="object-fit" src="assets/images/article_autor_1.jpg 639w" width="639" height="639" alt="autor photo" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="autor-name"><span>Nina Dobrev</span></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
+                                            <a href="#" class="article-card link-unstyled">
+                                                <div class="article-card-image">
+                                                    <picture class="card-image">
+                                                        <source srcset="assets/images/webp/article_8.webp 1920w" type="image/webp" sizes="1920px">
+                                                        <source srcset="assets/images/assets/images/article_8.jpg 1920w" type="image/jpeg" sizes="1920px">
+                                                        <img class="object-fit" src="assets/images/article_8.jpg 1920w" width="1920" height="1280" alt="article photo" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="article-card-title">
+                                                    <h3 class="card-title">The many benefits of taking a healing holiday</h3>
+                                                </div>
+                                                <div class="autor">
+                                                    <div class="autor-hoto">
+                                                        <picture>
+                                                            <source srcset="assets/images/webp/article_autor_1.webp 639w" type="image/webp" sizes="639px">
+                                                            <source srcset="assets/images/assets/images/article_autor_1.jpg 639w" type="image/jpeg" sizes="639px">
+                                                            <img class="object-fit" src="assets/images/article_autor_1.jpg 639w" width="639" height="639" alt="autor photo" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="autor-name"><span>Nina Dobrev</span></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="article-category">
+                                    <div class="row title-with-link">
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
+                                            <div class="wrap-title-category">
+                                                <svg class="icon-mauntain"><use xlink:href="./assets/images/sprite.svg#icon-mauntain"></use></svg>
+                                                <h2 class="title">Art And Culture</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
+                                            <div class="wrap-link">
+                                                <a href="#" class="link-view-all">
+                                                    <span>Read More</span>
+                                                    <svg class="arrow-right"><use xlink:href="./assets/images/sprite.svg#arrow-right"></use></svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
+                                            <a href="#" class="article-card link-unstyled">
+                                                <div class="article-card-image">
+                                                    <picture class="card-image">
+                                                        <source srcset="assets/images/webp/article_10.webp 1920w" type="image/webp" sizes="1920px">
+                                                        <source srcset="assets/images/assets/images/article_10.jpg 1920w" type="image/jpeg" sizes="1920px">
+                                                        <img class="object-fit" src="assets/images/article_10.jpg 1920w" width="1920" height="2886" alt="article photo" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="article-card-title">
+                                                    <h3 class="card-title">The 24 Best Things to Do in Rome</h3>
+                                                </div>
+                                                <div class="autor">
+                                                    <div class="autor-hoto">
+                                                        <picture>
+                                                            <source srcset="assets/images/webp/article_autor_3.webp 639w" type="image/webp" sizes="639px">
+                                                            <source srcset="assets/images/assets/images/article_autor_3.jpg 639w" type="image/jpeg" sizes="639px">
+                                                            <img class="object-fit" src="assets/images/article_autor_3.jpg 639w" width="639" height="639" alt="autor photo" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="autor-name"><span>Anna Mars</span></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
+                                            <a href="#" class="article-card link-unstyled">
+                                                <div class="article-card-image">
+                                                    <picture class="card-image">
+                                                        <source srcset="assets/images/webp/article_5.webp 1920w" type="image/webp" sizes="1920px">
+                                                        <source srcset="assets/images/assets/images/article_5.jpg 1920w" type="image/jpeg" sizes="1920px">
+                                                        <img class="object-fit" src="assets/images/article_5.jpg 1920w" width="1920" height="1280" alt="article photo" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="article-card-title">
+                                                    <h3 class="card-title">The many benefits of taking a healing holiday</h3>
+                                                </div>
+                                                <div class="autor">
+                                                    <div class="autor-hoto">
+                                                        <picture>
+                                                            <source srcset="assets/images/webp/article_autor_1.webp 639w" type="image/webp" sizes="639px">
+                                                            <source srcset="assets/images/assets/images/article_autor_1.jpg 639w" type="image/jpeg" sizes="639px">
+                                                            <img class="object-fit" src="assets/images/article_autor_1.jpg 639w" width="639" height="639" alt="autor photo" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="autor-name"><span>Nina Dobrev</span></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="article-category">
+                                    <div class="row title-with-link">
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
+                                            <div class="wrap-title-category">
+                                                <svg class="icon-campground"><use xlink:href="./assets/images/sprite.svg#icon-campground"></use></svg>
+                                                <h2 class="title">Wildlife And Nature</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
+                                            <div class="wrap-link">
+                                                <a href="#" class="link-view-all">
+                                                    <span>Read More</span>
+                                                    <svg class="arrow-right"><use xlink:href="./assets/images/sprite.svg#arrow-right"></use></svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
+                                            <a href="#" class="article-card link-unstyled">
+                                                <div class="article-card-image">
+                                                    <picture class="card-image">
+                                                        <source srcset="assets/images/webp/article_4.webp 1920w" type="image/webp" sizes="1920px">
+                                                        <source srcset="assets/images/assets/images/article_4.jpg 1920w" type="image/jpeg" sizes="1920px">
+                                                        <img class="object-fit" src="assets/images/article_4.jpg 1920w" width="1920" height="2880" alt="article photo" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="article-card-title">
+                                                    <h3 class="card-title">The Wild and Windy Westfjords</h3>
+                                                </div>
+                                                <div class="autor">
+                                                    <div class="autor-hoto">
+                                                        <picture>
+                                                            <source srcset="assets/images/webp/article_autor_1.webp 639w" type="image/webp" sizes="639px">
+                                                            <source srcset="assets/images/assets/images/article_autor_1.jpg 639w" type="image/jpeg" sizes="639px">
+                                                            <img class="object-fit" src="assets/images/article_autor_1.jpg 639w" width="639" height="639" alt="autor photo" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="autor-name"><span>Nina Dobrev</span></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
+                                            <a href="#" class="article-card link-unstyled">
+                                                <div class="article-card-image">
+                                                    <picture class="card-image">
+                                                        <source srcset="assets/images/webp/article_9.webp 1920w" type="image/webp" sizes="1920px">
+                                                        <source srcset="assets/images/assets/images/article_9.jpg 1920w" type="image/jpeg" sizes="1920px">
+                                                        <img class="object-fit" src="assets/images/article_9.jpg 1920w" width="1920" height="2560" alt="article photo" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="article-card-title">
+                                                    <h3 class="card-title">The many benefits of taking a healing holiday</h3>
+                                                </div>
+                                                <div class="autor">
+                                                    <div class="autor-hoto">
+                                                        <picture>
+                                                            <source srcset="assets/images/webp/article_autor_2.webp 639w" type="image/webp" sizes="639px">
+                                                            <source srcset="assets/images/assets/images/article_autor_2.jpg 639w" type="image/jpeg" sizes="639px">
+                                                            <img class="object-fit" src="assets/images/article_autor_2.jpg 639w" width="639" height="639" alt="autor photo" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="autor-name"><span>Alan Black</span></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="article-category">
+                                    <div class="row title-with-link">
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
+                                            <div class="wrap-title-category">
+                                                <svg class="icon-umbrella-beach"><use xlink:href="./assets/images/sprite.svg#icon-umbrella-beach"></use></svg>
+                                                <h2 class="title">Family Holidays</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
+                                            <div class="wrap-link">
+                                                <a href="#" class="link-view-all">
+                                                    <span>Read More</span>
+                                                    <svg class="arrow-right"><use xlink:href="./assets/images/sprite.svg#arrow-right"></use></svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
+                                            <a href="#" class="article-card link-unstyled">
+                                                <div class="article-card-image">
+                                                    <picture class="card-image">
+                                                        <source srcset="assets/images/webp/article_6.webp 1920w" type="image/webp" sizes="1920px">
+                                                        <source srcset="assets/images/assets/images/article_6.jpg 1920w" type="image/jpeg" sizes="1920px">
+                                                        <img class="object-fit" src="assets/images/article_6.jpg 1920w" width="1920" height="1280" alt="article photo" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="article-card-title">
+                                                    <h3 class="card-title">Architecto autem, porro ad rem ipsam consequuntur quaerat cupiditate velit optio veritatis in!</h3>
+                                                </div>
+                                                <div class="autor">
+                                                    <div class="autor-hoto">
+                                                        <picture>
+                                                            <source srcset="assets/images/webp/article_autor_1.webp 639w" type="image/webp" sizes="639px">
+                                                            <source srcset="assets/images/assets/images/article_autor_1.jpg 639w" type="image/jpeg" sizes="639px">
+                                                            <img class="object-fit" src="assets/images/article_autor_1.jpg 639w" width="639" height="639" alt="autor photo" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="autor-name"><span>Nina Dobrev</span></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
+                                            <a href="#" class="article-card link-unstyled">
+                                                <div class="article-card-image">
+                                                    <picture class="card-image">
+                                                        <source srcset="assets/images/webp/article_7.webp 1920w" type="image/webp" sizes="1920px">
+                                                        <source srcset="assets/images/assets/images/article_7.jpg 1920w" type="image/jpeg" sizes="1920px">
+                                                        <img class="object-fit" src="assets/images/article_7.jpg 1920w" width="1920" height="1280" alt="article photo" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="article-card-title">
+                                                    <h3 class="card-title">The many benefits of taking a healing holiday</h3>
+                                                </div>
+                                                <div class="autor">
+                                                    <div class="autor-hoto">
+                                                        <picture>
+                                                            <source srcset="assets/images/webp/article_autor_1.webp 639w" type="image/webp" sizes="639px">
+                                                            <source srcset="assets/images/assets/images/article_autor_1.jpg 639w" type="image/jpeg" sizes="639px">
+                                                            <img class="object-fit" src="assets/images/article_autor_1.jpg 639w" width="639" height="639" alt="autor photo" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="autor-name"><span>Nina Dobrev</span></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="article-category">
+                                    <div class="row title-with-link">
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
+                                            <div class="wrap-title-category">
+                                                <svg class="icon-food"><use xlink:href="./assets/images/sprite.svg#icon-food"></use></svg>
+                                                <h2 class="title">Food And Drink</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
+                                            <div class="wrap-link">
+                                                <a href="#" class="link-view-all">
+                                                    <span>Read More</span>
+                                                    <svg class="arrow-right"><use xlink:href="./assets/images/sprite.svg#arrow-right"></use></svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
+                                            <a href="#" class="article-card link-unstyled">
+                                                <div class="article-card-image">
+                                                    <picture class="card-image">
+                                                        <source srcset="assets/images/webp/article_1.webp 1920w" type="image/webp" sizes="1920px">
+                                                        <source srcset="assets/images/assets/images/article_1.jpg 1920w" type="image/jpeg" sizes="1920px">
+                                                        <img class="object-fit" src="assets/images/article_1.jpg 1920w" width="1920" height="2880" alt="article photo" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="article-card-title">
+                                                    <h3 class="card-title">The best Kyoto restaurant to try Japanese food</h3>
+                                                </div>
+                                                <div class="autor">
+                                                    <div class="autor-hoto">
+                                                        <picture>
+                                                            <source srcset="assets/images/webp/article_autor_2.webp 639w" type="image/webp" sizes="639px">
+                                                            <source srcset="assets/images/assets/images/article_autor_2.jpg 639w" type="image/jpeg" sizes="639px">
+                                                            <img class="object-fit" src="assets/images/article_autor_2.jpg 639w" width="639" height="639" alt="autor photo" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="autor-name"><span>Alan Black</span></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
+                                            <a href="#" class="article-card link-unstyled">
+                                                <div class="article-card-image">
+                                                    <picture class="card-image">
+                                                        <source srcset="assets/images/webp/article_2.webp 1920w" type="image/webp" sizes="1920px">
+                                                        <source srcset="assets/images/assets/images/article_2.jpg 1920w" type="image/jpeg" sizes="1920px">
+                                                        <img class="object-fit" src="assets/images/article_2.jpg 1920w" width="1920" height="2880" alt="article photo" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="article-card-title">
+                                                    <h3 class="card-title">
+                                                        Dolore laboriosam, hic, magni quaerat dicta sit est iusto modi vel dolores veritatis tempore iste facere consequuntur, dignissimos aliquid.
+                                                    </h3>
+                                                </div>
+                                                <div class="autor">
+                                                    <div class="autor-hoto">
+                                                        <picture>
+                                                            <source srcset="assets/images/webp/article_autor_3.webp 639w" type="image/webp" sizes="639px">
+                                                            <source srcset="assets/images/assets/images/article_autor_3.jpg 639w" type="image/jpeg" sizes="639px">
+                                                            <img class="object-fit" src="assets/images/article_autor_3.jpg 639w" width="639" height="639" alt="autor photo" loading="lazy">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="autor-name"><span>Anna Mars</span></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="main-footer">
+            <div class="container">
+                <div class="top-footer">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-4 reverse" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="text-content">
+                                <a href="index.html" class="logo">
+                                    <img src="assets/images/logo.svg" class="img-fluid" alt="logo" loading="lazy">
+                                </a>
+                                <p class="information">Plan and book your perfect trip with expert advice, travel tips destination information from us</p>
+                                <span class="privat-policy">©2020 Thousand Sunny. All rights reserved</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-8" data-aos="fade-left" data-aos-duration="1500">
+                            <div class="menu-footer">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="footer-list">
+                                            <h4 class="title">Destinations</h4>
+                                            <ul class="list-unstyled list-links">
+                                                <li><a href="#">Africa</a></li>
+                                                <li><a href="#">Antarctica</a></li>
+                                                <li><a href="#">Asia</a></li>
+                                                <li><a href="#">Europe</a></li>
+                                                <li><a href="#">America</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 list-center">
+                                        <div class="footer-list">
+                                            <h4 class="title">Shop</h4>
+                                            <ul class="list-unstyled list-links">
+                                                <li><a href="#">Destination Guides</a></li>
+                                                <li><a href="#">Pictorial & Gifts</a></li>
+                                                <li><a href="#">Special Offers</a></li>
+                                                <li><a href="#">Delivery Times</a></li>
+                                                <li><a href="#">FAQs</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 list-end">
+                                        <div class="footer-list">
+                                            <h4 class="title">Interests</h4>
+                                            <ul class="list-unstyled list-links">
+                                                <li><a href="#">Adventure Travel</a></li>
+                                                <li><a href="#">Art And Culture</a></li>
+                                                <li><a href="#">Wildlife And Nature</a></li>
+                                                <li><a href="#">Family Holidays</a></li>
+                                                <li><a href="#">Food And Drink</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-footer" data-aos="zoom-in" data-aos-duration="1500" data-aos-offset="0">
+                    <div class="wrap-social-list">
+                        <ul class="social-list">
+                            <li>
+                                <a href="#" class="wrap-icon">
+                                    <svg class="icon-twitter"><use xlink:href="./assets/images/sprite.svg#icon-twitter"></use></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="wrap-icon">
+                                    <svg class="icon-facebook"><use xlink:href="./assets/images/sprite.svg#icon-facebook"></use></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="wrap-icon">
+                                    <svg class="icon-instagram"><use xlink:href="./assets/images/sprite.svg#icon-instagram"></use></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="wrap-icon">
+                                    <svg class="icon-linkedin"><use xlink:href="./assets/images/sprite.svg#icon-linkedin"></use></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="wrap-icon">
+                                    <svg class="icon-youtube"><use xlink:href="./assets/images/sprite.svg#icon-youtube"></use></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+            <div class="modal-dialog custom-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <h5 class="modal-title">Login to Your Account</h5>
+                    <div class="modal-body">
+                        <form class="form-login">
+                            <div class="wrap-form-element">
+                                <input type="email" class="form-control custom-form" id="loginEmail" placeholder="Email">
+                                <svg class="icon-email"><use xlink:href="./assets/images/sprite.svg#icon-email"></use></svg>
+                            </div>
+                            <div class="wrap-form-element">
+                                <input type="password" class="form-control custom-form" id="loginPassword" placeholder="Password">
+                                <svg class="icon-lock"><use xlink:href="./assets/images/sprite.svg#icon-lock"></use></svg>
+                            </div>
+                            <div class="form-check wrap-form-element">
+                                <input type="checkbox" class="form-check-input" id="checkRemember">
+                                <label class="form-check-label" for="checkRemember">Remember me</label>
+                            </div>
+                            <div class="wrap-btn">
+                                <button type="submit" class="btn custom-btn btn-block">Login</button>
+                            </div>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModal" aria-hidden="true">
+            <div class="modal-dialog custom-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <h5 class="modal-title">Register</h5>
+                    <div class="modal-body">
+                        <form class="form-register">
+                            <div class="wrap-form-element">
+                                <input type="text" class="form-control custom-form" id="username" placeholder="Username">
+                                <svg class="icon-user"><use xlink:href="./assets/images/sprite.svg#icon-user"></use></svg>
+                            </div>
+                            <div class="wrap-form-element">
+                                <input type="email" class="form-control custom-form" id="registerEmail" placeholder="Email">
+                                <svg class="icon-email"><use xlink:href="./assets/images/sprite.svg#icon-email"></use></svg>
+                            </div>
+                            <div class="wrap-form-element">
+                                <input type="password" class="form-control custom-form" id="registerPassword" placeholder="Password">
+                                <svg class="icon-lock"><use xlink:href="./assets/images/sprite.svg#icon-lock"></use></svg>
+                            </div>
+                            <div class="wrap-form-element">
+                                <input type="password" class="form-control custom-form" id="registerPasswordConfirm" placeholder="Confirm Password">
+                                <svg class="icon-key"><use xlink:href="./assets/images/sprite.svg#icon-key"></use></svg>
+                            </div>
+                            <div class="wrap-btn">
+                                <button type="submit" class="btn custom-btn btn-block">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/all.js" defer></script>
+    </body>
+</html>
